@@ -6,7 +6,6 @@ let NFTSTORE, owner, addr1, addr2;
 beforeEach(async function () {
   NFTSTORE = await ethers.deployContract("NFTstore");
   [owner, addr1, addr2, _] = await ethers.getSigners();
-  console.log('beforeEach')
 });
 
 describe("Deployment", function () {
